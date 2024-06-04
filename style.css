@@ -14,8 +14,79 @@ html,body{
 body{
     display: flex;
     align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-image:url(https://i.pinimg.com/originals/3e/e6/28/3ee62879e9bc26be3a118a80af7b6427.jpg);
+    background-position: center;
+    background-size: cover;
+    gap:40px;
+
+}
+.container{
+    margin:20px 0px;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
-#left, #right{
+
+.input #text-box{
+    min-height: 5vh;
+    width:80vw;
+    outline: none;
+    border:none;
+    background-color: #ededee;
+    color:black;
+    font-weight:450;
+    padding:10px 10px;
+    border-radius:10px;
+}
+p div{
+    color:black;
+}
+.input button{
+    color:white;
+    padding:10px 20px;
+    background-color:#457ef8;
+    margin: 10px 0px;
+    border:none;
+    font-weight:650;
+    border-radius:10px;
+    cursor: pointer;
     
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+    flex-wrap: wrap;
+
+}
+#left, #right{
+    min-width:40vw;
+    max-width: 40vw;
+    min-height:70vh;
+    background-color: rgba(240, 98, 32, 0.486);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding:10px;
+}
+.task{
+    padding:10px;
+    border-radius:5px;
+    background-color: black;
+    margin:10px 0px;
+    cursor: pointer;
+}
+.main h2{
+    font-size:1.2em;
+    text-align: left;
+    margin:5px 10px;
+}
+.main h2 span{
+    color:rgb(45, 255, 45);
 }

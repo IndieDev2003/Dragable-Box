@@ -7,9 +7,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="main">
-        <div id="left"></div>
-        <div id="right"></div>
+   <div class="container">
+    <div class="input">
+        <p contenteditable="true" id="text-box" placeholder="type here"></p>
+        <button id="btn" onclick="AddTask()">Add To List</button>
     </div>
+    <div class="main">
+        <div id="left">
+            <h2>Pending🎨</h2>
+            <div draggable="true" class="task">Hello World</div>
+        </div>
+        <div id="right">
+            <h2>Done <span>✔</span></h2>
+        </div>
+    </div>
+   </div>
+
+
+   <script src="dragablebox.js"></script>
 </body>
 </html>
