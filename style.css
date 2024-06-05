@@ -81,6 +81,8 @@ p div{
     background-color: black;
     margin:10px 0px;
     cursor: pointer;
+    white-space: nowrap;
+    position: relative;
 }
 .main h2{
     font-size:1.2em;
@@ -89,4 +91,17 @@ p div{
 }
 .main h2 span{
     color:rgb(45, 255, 45);
+}
+/* .task::after{
+    content: 'dlt';
+    position: absolute;
+    bottom:10px;
+    right:10px;
+} */
+
+.task span{
+    position: absolute;
+    bottom: 10px;
+    right:10px;
+    font-size: 10px;
 }
