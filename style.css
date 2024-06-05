@@ -20,12 +20,20 @@ body{
     background-position: center;
     background-size: cover;
     gap:40px;
+    /* overflow: hidden; */
 
 }
 .container{
+    /* height:100%; */
     margin:20px 0px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* justify-content: center; */
 }
 .input{
+    
+    /* width:85vw; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -80,15 +88,31 @@ p div{
     -webkit-backdrop-filter: blur(10px);
     padding:10px;
 }
-.task{
+#right .task{
     padding:10px;
     border-radius:5px;
-    background-color: black;
+    font-weight: 550;
+    /* background-color: rgb(4, 67, 139); */
+    background: linear-gradient(210deg,#f71c1c,#044fc0);
     margin:10px 0px;
     cursor: pointer;
     white-space: nowrap;
     position: relative;
+    text-decoration:line-through;
+    color:rgb(243, 236, 236);
 }
+.task{
+    padding:10px;
+    border-radius:5px;
+    background-color: black;
+    background: linear-gradient(210deg,#044fc0,#f71c1c);
+    margin:10px 0px;
+    cursor: pointer;
+    white-space: nowrap;
+    position: relative;
+    
+}
+
 .main h2{
     font-size:1.2em;
     text-align: left;
@@ -109,4 +133,16 @@ p div{
     bottom: 10px;
     right:10px;
     font-size: 10px;
+}
+.footer{
+
+    text-align: center;
+    margin-top:10px;
+    padding:10px auto;
+    background-color: rgba(240, 248, 255, 0.507);
+    backdrop-filter: blur(10px);
+
+}
+.footer span{
+    color:red;
 }
